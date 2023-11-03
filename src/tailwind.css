@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .box-product {
+        @apply border bg-white shadow-lg rounded-lg overflow-hidden
+    }
+
+    /* apply in line 6 */
+    /* .grid-product {
+        @apply grid grid-cols-1 md: grid-cols-3 gap-4
+    } */
+}
