@@ -8,8 +8,28 @@ module.exports = {
     './templates/*.liquid'
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '94': '22rem'
+      }
+    },
   },
   plugins: [],
 }
 
+
+// module.exports = {
+//   purge: [],
+//   darkMode: false, // or 'media' or 'class'
+//   theme: {
+//     extend: {
+//       height: {
+//         '94': '22rem'
+//       }
+//     },
+//   },
+//   variants: {
+//     extend: {},
+//   },
+//   plugins: [],
+// }
