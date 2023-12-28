@@ -4,11 +4,12 @@
 
 @layer components {
     .box-product {
-        @apply border bg-white shadow-lg rounded-lg overflow-hidden
+        @apply border bg-white shadow-lg rounded-lg overflow-hidden;
     }
-
-    /* apply in line 6 */
-    /* .grid-product {
-        @apply grid grid-cols-1 md: grid-cols-3 gap-4
-    } */
+    .label-address{
+        @apply w-full text-gray-700 border px-4 py-3 focus:outline-none;
+    }
+    .text-label-address{
+        @apply uppercase text-gray-700 text-xs font-medium mb-2;
+    }
 }
