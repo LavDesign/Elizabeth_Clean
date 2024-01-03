@@ -29,7 +29,7 @@
         {% if article.image != blank %}
           <img
             class="w-full h-80 md:h-96 object-cover object-center"
-            src="{{ article.image | img_url: 'large'}}"
+            src="{{ article.image | image_url: 'large' }}"
             alt="{{ article.image.alt }}">
         {% else %}
           {% assign placeholder_image = 'lifestyle-2' %}
@@ -64,7 +64,7 @@
           {% endfor %}
 
           <div class="max-w-6xl mx-auto">
-            {%render 'pagination', pagination: paginate %}
+            {% render 'pagination', pagination: paginate %}
           </div>
         {% endpaginate %}
       </div>

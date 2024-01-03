@@ -12,7 +12,7 @@
                 <a href="{{ article.url }}">
                   <img
                     class="w-full h-80 object-cover"
-                    src="{{ article.image | img_url: 'medium' }}"
+                    src="{{ article.image | image_url: 'medium' }}"
                     alt="">
                 </a>
               {% else %}
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="max-w-6xl mx-auto">
-      {%render 'pagination', pagination: paginate %}
+      {% render 'pagination', pagination: paginate %}
     </div>
   {% endpaginate %}
 </div>
